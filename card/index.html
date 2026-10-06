@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sweet Lou's Handyman Co.</title>
+
+  <meta
+    name="description"
+    content="Save Sweet Lou's Handyman Co. to your contacts or request handyman service on Oʻahu."
+  >
+
+  <meta name="theme-color" content="#168A8F">
+
+  <link rel="icon" href="../images/logo.png">
+
+  <style>
+    :root {
+      --ink: #151515;
+      --cream: #f7eddf;
+      --paper: #fffdf8;
+      --teal: #168a8f;
+      --teal-dark: #0c666b;
+      --coral: #df3f62;
+      --orange: #f28b27;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 28px 18px;
+      display: grid;
+      place-items: center;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(242, 139, 39, .28),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at bottom left,
+          rgba(22, 138, 143, .24),
+          transparent 36%
+        ),
+        var(--cream);
+    }
+
+    .card {
+      width: min(100%, 440px);
+      padding: 34px 26px 28px;
+      background: var(--paper);
+      border: 4px solid var(--ink);
+      border-radius: 30px;
+      box-shadow: 12px 12px 0 var(--ink);
+      text-align: center;
+    }
+
+    .logo {
+      width: 170px;
+      max-width: 55%;
+      height: auto;
+      display: block;
+      margin: 0 auto 18px;
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--teal-dark);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 8vw, 3rem);
+      line-height: .95;
+      letter-spacing: -.045em;
+    }
+
+    .tagline {
+      margin: 13px 0 8px;
+      font-weight: 900;
+      font-size: 1.08rem;
+      color: var(--coral);
+    }
+
+    .location {
+      margin: 0 0 26px;
+      font-size: .96rem;
+      opacity: .72;
+    }
+
+    .buttons {
+      display: grid;
+      gap: 12px;
+    }
+
+    .button {
+      min-height: 56px;
+      padding: 15px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid var(--ink);
+      border-radius: 15px;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 900;
+      transition:
+        transform .12s ease,
+        box-shadow .12s ease;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .button:active {
+      transform: translate(3px, 3px);
+      box-shadow: none;
+    }
+
+    .save {
+      background: var(--teal);
+      color: white;
+      box-shadow: 5px 5px 0 var(--ink);
+    }
+
+    .quote {
+      background: var(--coral);
+      color: white;
+      box-shadow: 5px 5px 0 var(--ink);
+    }
+
+    .website {
+      background: var(--orange);
+      box-shadow: 5px 5px 0 var(--ink);
+    }
+
+    .email {
+      background: var(--cream);
+      box-shadow: 5px 5px 0 var(--ink);
+    }
+
+    .small-print {
+      margin: 24px 0 0;
+      font-size: .78rem;
+      line-height: 1.45;
+      opacity: .58;
+    }
+
+    #status {
+      min-height: 20px;
+      margin-top: 12px;
+      font-size: .82rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 14px 30px;
+      }
+
+      .card {
+        padding: 28px 20px 24px;
+        box-shadow: 8px 8px 0 var(--ink);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="card">
+
+    <img
+      class="logo"
+      src="../images/logo.png"
+      alt="Sweet Lou's Handyman Co."
+    >
+
+    <p class="eyebrow">Oʻahu Handyman</p>
+
+    <h1>Sweet Lou's<br>Handyman Co.</h1>
+
+    <p class="tagline">Steady, Plumb &amp; True.</p>
+
+    <p class="location">Serving Oʻahu, Hawaiʻi</p>
+
+    <div class="buttons">
+
+      <button
+        class="button save"
+        id="save-contact"
+        type="button"
+      >
+        Save Lou to Contacts
+      </button>
+
+      <a
+        class="button quote"
+        href="https://clienthub.getjobber.com/hubs/11368da9-09ec-49d5-b865-3fbfedb3c5c8/public/requests/4905647/new"
+      >
+        Request a Quote
+      </a>
+
+      <a
+        class="button website"
+        href="https://sweetloushandymanco.com/"
+      >
+        Visit Website
+      </a>
+
+      <a
+        class="button email"
+        href="mailto:sweetloushandymanco@gmail.com"
+      >
+        Email Lou
+      </a>
+
+    </div>
+
+    <div id="status" aria-live="polite"></div>
+
+    <p class="small-print">
+      Repairs · Installations · Maintenance · Punch Lists
+    </p>
+
+  </main>
+
+  <script>
+    const saveButton = document.getElementById('save-contact');
+    const status = document.getElementById('status');
+
+    async function imageToBase64(url) {
+      const response = await fetch(url);
+      const blob = await response.blob();
+
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+
+        reader.onloadend = () => {
+          const base64 = reader.result.split(',')[1];
+          resolve(base64);
+        };
+
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+      });
+    }
+
+    saveButton.addEventListener('click', async () => {
+      try {
+        status.textContent = 'Preparing contact…';
+
+        const photo = await imageToBase64('../images/logo.png');
+
+        const vCard = [
+          'BEGIN:VCARD',
+          'VERSION:3.0',
+          'N:;Lou;;;',
+          "FN:Lou - Sweet Lou's Handyman Co.",
+          "ORG:Sweet Lou's Handyman Co.",
+          'TITLE:Owner / Handyman',
+          'EMAIL;TYPE=INTERNET:sweetloushandymanco@gmail.com',
+          'URL:https://sweetloushandymanco.com',
+          'NOTE:Oʻahu handyman service. Steady\\, Plumb & True.',
+          'PHOTO;ENCODING=b;TYPE=PNG:' + photo,
+          'END:VCARD'
+        ].join('\\r\\n');
+
+        const blob = new Blob(
+          [vCard],
+          { type: 'text/vcard;charset=utf-8' }
+        );
+
+        const url = URL.createObjectURL(blob);
+
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'Sweet-Lous-Handyman-Co.vcf';
+
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+
+        setTimeout(() => {
+          URL.revokeObjectURL(url);
+        }, 1000);
+
+        status.textContent = 'Contact ready to save.';
+
+      } catch (error) {
+        console.error(error);
+
+        status.textContent =
+          'Could not create the contact. Please use the email button below.';
+      }
+    });
+  </script>
+
+</body>
+</html>
