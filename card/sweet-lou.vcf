@@ -4,7 +4,8 @@ N:;Lou;;;
 FN:Lou - Sweet Lou's Handyman Co.
 ORG:Sweet Lou's Handyman Co.
 TITLE:Owner / Handyman
-EMAIL;TYPE=INTERNET:sweetloushandymanco@gmail.com
-URL:https://sweetloushandymanco.com
+EMAIL;TYPE=INTERNET,WORK:sweetloushandymanco@gmail.com
+URL;TYPE=WORK:https://sweetloushandymanco.com
 NOTE:Oʻahu handyman service. Steady\, Plumb & True.
+PHOTO;VALUE=URI:https://sweetloushandymanco.com/images/logo.png
 END:VCARD
